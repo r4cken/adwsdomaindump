@@ -254,7 +254,7 @@ class ADWSConnection:
             hashes = None
             password = self.password
             if password and ':' in password and len(password.split(':')) == 2:
-		lm_hash, nt_hash = password.split(':')
+                lm_hash, nt_hash = password.split(':')
                 hashes = nt_hash
                 password = None
             
